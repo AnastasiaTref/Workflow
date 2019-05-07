@@ -8,9 +8,10 @@ global.$ = {
 		src: require('./gulp/paths/config.js').source,
 		temp: require('./gulp/paths/config.js').temp,
 		dist: require('./gulp/paths/config.js').dist,
+		libs: require('./gulp/paths/config.js').libs,
 		tasks: require('./gulp/paths/tasks.js')
 	},
-	op: require('./gulp/paths/config.js').options
+	op: require('./gulp/paths/config.js').options	
 };
 
 $.path.tasks.forEach(function(taskPath) {
@@ -20,10 +21,10 @@ $.path.tasks.forEach(function(taskPath) {
 $.gulp.task('default', $.gulp.series(
 	'clean',
 	$.gulp.parallel(
-		$.op.sass ? 'pug' : 'html',
+		$.op.pug ? 'pug' : 'html',
     	$.op.sass ? 'sass' : 'css',
     	'js.libs',
-		'css.libs',		
+		//'css.libs',		
 		'copy.image',
 		'sprite.svg',
 		'copy.fonts',

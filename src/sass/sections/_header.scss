@@ -1,1 +1,37 @@
-.header {}
+.header {
+	@include media($lg, max) {
+		background: #1c2838;
+	}
+	color: var(--blue);
+	
+	.grid {
+		@include f-row();
+	}
+
+	&-inner {
+		@include f-grid;
+		height: 400px;
+	}
+	&__title {
+		@include f-col(6);
+
+		@include media($md) {
+			@include f-col(6,10px);
+			box-sizing: border-box;
+		}
+	}
+	&-content {
+		
+	}
+	.left {
+		@include t-pull(2);
+
+		&:after {
+
+			@include pseudo;
+		}
+	}
+	.right {
+		@include cloth;
+	}
+}

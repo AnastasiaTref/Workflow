@@ -14,5 +14,7 @@ module.exports = function() {
         }
         
 		$.gulp.watch(`./${$.path.src.folder}/${$.path.src.js}/**/*.js`, $.gulp.series('script'));
+        $.gulp.watch(`./${$.path.src.folder}/${$.path.src.img}/**/*.+(jpg|png|gif|svg|tiff|mp4)`, $.gulp.series('copy.image'));
+        $.gulp.watch(`./${$.path.src.folder}/${$.path.src.fonts}/**/*.*`, $.gulp.series('copy.fonts'));
 	});
 }

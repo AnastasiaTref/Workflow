@@ -7,7 +7,32 @@ const path = {
     options: {
         sass : true,                     // Использовать sass
         pug  : true,                     // Использовать pug
-    },    
+    },
+
+    libs: {
+        jsLibs() {
+
+            var path = $.path.src.folder + '/' + $.path.src.libs + '/';
+
+            return [
+                path + 'jquery-3.3.1.min.js',
+
+                //path + 'imagesloaded.pkgd.min.js',       
+                //path + 'masonry.pkgd.min.js',
+                //path + 'noframework.waypoints.min.js',
+                //path + 'picturefill.min.js',
+                //path + 'velocity.min.js'
+            ];               
+        },
+        cssLibs() {
+
+            var path = $.path.src.folder + '/' + $.path.src.libs + '/';
+
+            return [
+                //path + 'animate.css'
+            ]
+        }
+    },
 
     source: { // Пути исходников
 
@@ -21,30 +46,6 @@ const path = {
         fonts: 'fonts', // Папка со шрифтами
         img: 'images', // Папка с изображениями
         tasks: 'gulp/tasks', // Папка с gulp тасками
-
-        jsLibs() {
-
-	    	var path = this.folder + '/' + this.libs + '/';
-
-	        return [
-	            path + 'jquery-3.3.1.min.js',
-
-                path + 'imagesloaded.pkgd.min.js',       
-	            path + 'masonry.pkgd.min.js',
-                path + 'noframework.waypoints.min.js',
-                path + 'picturefill.min.js',
-	            path + 'velocity.min.js'
-	        ];               
-	    },
-        cssLibs() {
-
-            var path = this.folder + '/' + this.libs + '/';
-
-
-            return [
-                path + 'animate.css'
-            ]
-        }
     },
 
     temp: { // Пути готовых файлов
