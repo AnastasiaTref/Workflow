@@ -21,7 +21,7 @@ $ npm install gulp --save-dev
 #### 4. Install all dependencies
 
 ```sh
-$ git init
+$ npm init
 
 ```
 #### 5. Start 
