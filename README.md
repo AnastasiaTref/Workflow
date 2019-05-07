@@ -5,7 +5,7 @@
 #### 1.Download the repository
 
 ```sh
-$ git clone "https://github.com/AnastasiaTref/workflow.git"
+$ git clone https://github.com/AnastasiaTref/workflow.git
 
 ```
 #### 2. Go into the folder with the workflow
