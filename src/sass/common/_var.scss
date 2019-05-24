@@ -1,12 +1,11 @@
 // fonts
-$fontMain: 'Montserrat', sans-serif;
+$fontMain: 'Roboto', sans-serif;
 $fontTitles: 'Roboto Condensed', sans-serif;
 
 
 
 // fonts's size	
 $fz16: 16px;
-$fz18: 18px;
 $fz20: 20px;
 $fz28: 28px;
 $fz30: 30px;
@@ -17,45 +16,10 @@ $fz30: 30px;
 				Common Colors
 ---------------------------------------------------*/
 
-$PhotoshopColor: rgba(0,23,33,1);
-$IllustratorColor: rgba(33,11,0, 1);
-$AEColor: rgba(25,0,62, 1);
-$CinemaColor: rgba(19,29,98,1);
-
-$mainBgColor: rgba(28, 40, 56, 1);
-$mainFontColor: rgba(27, 27, 27, 1);
-
-/*--------------------------------------------------
-				Blog Page Colors
----------------------------------------------------*/
-
-
-$mainPostColor: rgba(218, 228, 229, 0.8);
-$fontPostColor: rgba(24, 61, 107,1);
-$blueColor: rgba(172, 204, 221, 1);
-
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --font-family-sans-serif: Verdana, Geneva, sans-serif;
-  --font-family-monospace: "Courier New", Courier, monospace
-}
+$coconat: rgba(161, 97, 72, 1);
+$cafe: rgba(77, 46, 26, 1);
+$darkSalmon: rgba(232, 158, 129, 1);
+$muddyBrown: rgba(208, 112, 84, 1);
+$desert: rgba(232, 197, 170, 1);
+$pearl: rgba(237, 227, 205, 1);
+$grey: #333;

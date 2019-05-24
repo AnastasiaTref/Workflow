@@ -1,6 +1,6 @@
 *::placeholder	{
-	font-size: 20px; 
-	color: rgba(255, 255, 255, 1);
+	font-size: 16px; 
+	color: $coconat;
 	opacity: 1; 
 	transition: opacity 0.3s ease;
 	text-overflow:ellipsis;
@@ -27,14 +27,7 @@
 	padding: 0;
 	border: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: $fontMain;
-}
-h1 {
-	font-family: $fontTitles;
-	font-size: 40px;
-	color: #ffffff;
-}
+
 html {
 	font-size: $fz16;
 }
@@ -42,22 +35,20 @@ body {
 	font-family: $fontMain;
 	font-size: 1rem;
 	font-weight: normal;	
-	color: $mainFontColor;
+	color: $grey;
 	line-height: 1.5;
 	position: relative;
-	background: $mainBgColor url('http://www.divulgethemes.com/lifestyle_shop/wp-content/uploads/2016/06/07t2mb2.gif');
+	background: $pearl;
 }
-.only-mobile {
-	display: block;
-
-	@include media($lg) {
-		display: none;
-	}
+.headline {
+	font-size: $fz30;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
-.only-desktop {
-	display: none;
+.container {
+	@include f-grid(100%, 0);
 
-	@include media($lg) {
-		display: block;
+	@include media($xl) {
+		width: $xl;
 	}
 }

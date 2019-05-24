@@ -1,37 +1,21 @@
 .header {
-	@include media($lg, max) {
-		background: #1c2838;
-	}
-	color: var(--blue);
-	
-	.grid {
-		@include f-row();
+
+	&__head {
+		text-align: center;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    align-items: flex-end;
+	    padding: 20px 0;
 	}
 
-	&-inner {
-		@include f-grid;
-		height: 400px;
-	}
 	&__title {
-		@include f-col(6);
+		font-size: 40px;
+	    font-style: italic;
+	}
 
-		@include media($md) {
-			@include f-col(6,10px);
-			box-sizing: border-box;
-		}
+	.logo {
+		width: 200px;
 	}
-	&-content {
-		
-	}
-	.left {
-		@include t-pull(2);
 
-		&:after {
-
-			@include pseudo;
-		}
-	}
-	.right {
-		@include cloth;
-	}
 }
